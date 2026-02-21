@@ -32,9 +32,12 @@ sudo yum install zip
 
 Generate an SSH key pair for passwordless login:
 ssh-keygen -t rsa
-# Press Enter to accept default location /home/steve/.ssh/id_rsa
-# Press Enter to skip passphrase if desired.
-# Overwrite existing key if prompted.
+
+#Press Enter to accept default location /home/steve/.ssh/id_rsa
+
+#Press Enter to skip passphrase if desired.
+
+#Overwrite existing key if prompted.
 
 Copy the public key to Nautilus Backup Server:
 ssh-copy-id clint@stbkp01
@@ -57,3 +60,4 @@ ls -l
 exit
 
 This script ensures that /var/www/html/beta is archived as xfusioncorp_beta.zip, saved in /backup/ on App Server 2, and copied to /backup/ on Nautilus Backup Server automatically without requiring a password. The /backup/ directory on App Server 2 is temporary storage and is cleaned weekly. The script does not use sudo and can be executed by authorized users.
+
