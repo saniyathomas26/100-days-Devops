@@ -1,0 +1,8 @@
+
+# Day21 - Setting Up Git Repository on Storage Server
+
+## Task:
+Install the git package on the Storage Server using yum, and create a bare Git repository with the exact name and path /opt/demo.git.
+
+## Purpose:
+To establish a centralized bare Git repository on the Storage Server for remote version control and collaboration. A bare repository is required for shared access, enabling developers to push, pull, and manage source code in a structured and controlled manner within the Stratos DC infrastructure.
